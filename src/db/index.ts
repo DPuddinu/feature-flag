@@ -1,5 +1,5 @@
 import { db } from './db';
-import { Movies } from './schema';
+import { Environments } from './schema';
 
-const result = await db.select().from(Movies);
+const result = await db.select().from(Environments);
 console.log(result);

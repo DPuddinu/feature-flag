@@ -1,19 +1,29 @@
 import { db } from './db';
-import { Movies } from './schema';
+import { Environments, Features } from './schema';
 
-await db.insert(Movies).values([
+await db.insert(Environments).values([
   {
-    title: 'The Matrix',
-    releaseYear: 1999
+    id: 1,
+    name: 'australia'
   },
   {
-    title: 'The Matrix Reloaded',
-    releaseYear: 2003
-  },
-  {
-    title: 'The Matrix Revolutions',
-    releaseYear: 2003
+    id: 2,
+    name: 'italy'
   }
 ]);
 
+await db.insert(Features).values([
+  {
+    environmentId: 1,
+    name: 'hidden-menu'
+  },
+  {
+    environmentId: 1,
+    name: 'bg-red'
+  },
+  {
+    environmentId: 2,
+    name: 'bg-blue'
+  }
+]);
 console.log(`Seeding complete.`);
