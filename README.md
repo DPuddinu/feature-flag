@@ -12,6 +12,5 @@ Move to the db folder first
 
 ## Features
 
-- Drizzle ORM
-- Bun sqlite
-- Tailwind CSS
+- Simulate feature flags with environment variables
+- use bun to run the project with the env desired env file 

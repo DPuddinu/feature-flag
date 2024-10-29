@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev-italy": "bun --bun --env-file=.env.italy next dev",
-    "dev-australia": "bun --bun --env-file=.env.italy next dev",
+    "dev-australia": "bun --bun --env-file=.env.australia next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
