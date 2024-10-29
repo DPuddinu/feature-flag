@@ -1,5 +1,5 @@
-import * as schema from './schema';
 import { db } from './db';
+import { Movies } from './schema';
 
-const result = await db.select().from(schema.movies);
+const result = await db.select().from(Movies);
 console.log(result);

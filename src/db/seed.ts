@@ -1,7 +1,7 @@
 import { db } from './db';
-import * as schema from './schema';
+import { Movies } from './schema';
 
-await db.insert(schema.movies).values([
+await db.insert(Movies).values([
   {
     title: 'The Matrix',
     releaseYear: 1999
